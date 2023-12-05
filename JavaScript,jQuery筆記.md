@@ -237,3 +237,12 @@ swal({
 
 defer會讓 scripts 的檔案先開始被下載，但在 HTML 文件準備好後才開始執行，同時會確保各個 script 檔案執行的順序
 async會讓 scripts 的檔案先開始被下載，但它不會確保各個 script 檔案被執行的順序，先下載好的就先執行
+
+prop()是針對值固定為布林值的屬性進行操作
+attr()則是針對值為字串(非布林)的屬性進行操作
+
+取得標籤內文字(多層標籤適用)
+
+```
+var text = document.getElementById("id").innerText;
+```
